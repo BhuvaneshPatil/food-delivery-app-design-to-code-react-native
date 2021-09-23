@@ -1,7 +1,8 @@
+import { useDrawerProgress } from "@react-navigation/drawer";
 import React from "react";
 import { View, Text } from "react-native";
 import Animated from "react-native-reanimated";
-const MainLayout = ({ drawerAnimatedStyle }) => {
+const MainLayout = (props) => {
 	return (
 		<Animated.View
 			style={{
@@ -9,7 +10,6 @@ const MainLayout = ({ drawerAnimatedStyle }) => {
 				alignItems: "center",
 				backgroundColor: "white",
 				justifyContent: "center",
-				...drawerAnimatedStyle,
 			}}
 		>
 			<Text>MainLayout</Text>
